@@ -46,10 +46,6 @@ const QuickInfoSection = ({ person }) => {
           label={`Hair: ${person.hair_color}`.toUpperCase()}
         />
         <AttributeChip
-          icon={<ColorLensIcon style={{ color: "white" }} />}
-          label={`Skin: ${person.skin_color}`.toUpperCase()}
-        />
-        <AttributeChip
           icon={<RemoveRedEyeIcon style={{ color: "white" }} />}
           label={`Eye: ${person.eye_color}`.toUpperCase()}
         />

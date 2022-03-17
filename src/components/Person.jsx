@@ -10,12 +10,15 @@ import StarshipsSection from "./sections/StarshipsSection";
 
 const Person = ({ person, clearSelectedPerson }) => {
   useEffect(() => {
-    console.log("Trying to scroll to topppp");
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div style={{ marginTop: "80px" }}>
+    <div
+      style={{
+        marginTop: "80px",
+      }}
+    >
       <PersonTile person={person} selected={true} />
       <hr />
       <QuickInfoSection person={person} />
