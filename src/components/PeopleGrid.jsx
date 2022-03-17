@@ -33,9 +33,10 @@ const PeopleGrid = ({
           <CircularProgress style={{ color: "white" }} />
         ) : (
           <Button
-            startIcon={<ExpandMoreIcon />}
+            startIcon={!allPagesLoaded && <ExpandMoreIcon />}
             onClick={() => !allPagesLoaded && getMore()}
             loading={loading}
+            disabled={allPagesLoaded}
             style={{ color: "white" }}
           >
             {allPagesLoaded ? "NO MORE PAGES" : "MORE"}
