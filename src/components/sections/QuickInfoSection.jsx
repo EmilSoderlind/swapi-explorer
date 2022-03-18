@@ -31,7 +31,7 @@ const QuickInfoSection = ({ person }) => {
         />
         <AttributeChip
           icon={<HeightIcon style={{ color: "white" }} />}
-          label={`${person.height} m`.toUpperCase()}
+          label={`${person.height} cm`.toUpperCase()}
         />
         <AttributeChip
           icon={<ScaleIcon style={{ color: "white" }} />}
